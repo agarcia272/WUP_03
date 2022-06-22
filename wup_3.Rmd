@@ -54,6 +54,8 @@ summary.aov(model1)
 plot(TukeyHSD(model1))
 ```
 
+There is a difference
+
 ## Conclusions
 
 
