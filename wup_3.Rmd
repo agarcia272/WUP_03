@@ -31,12 +31,15 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
+In the chart the middle point represents the median of the group of people. It is the highest number from either one of the other groups. The back row is about 50% of the people. The Front row has the least percentage. According to the chart the people in the back are consuming the most alcohol. 
   
 ### get fancy  
 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
+
+The variability in the back row is bigger than the variability of the front and back row.
 
 ## Numerical Summarys 
 ```{r}
