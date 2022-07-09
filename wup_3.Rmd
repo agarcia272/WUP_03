@@ -53,12 +53,16 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
+The p-value is 0.000116 which is a very small number 
+
 ```{r}
 plot(TukeyHSD(model1))
 ```
 
-There is a difference
+There is a difference in the mean because the middle back rows and the front back rows have a negative number meaning that the value is negative. While the middle front row mean is positive which leads to a positive value.
 
 ## Conclusions
+
+In conclusion the average number drinks is different between at least two rows, therefore we failed to reject the null hypothesis. 
 
 
